@@ -80,6 +80,7 @@ span {
 
 .tabela__img {
     width: 100%;
+    min-width: 415px;
     height: 500px;
     border-radius: 5px;
     box-shadow: 2px 4px 0.5em 0.5px #000000;
