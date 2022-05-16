@@ -1,4 +1,4 @@
-# PUC Minas Engenharia de Software
+# PUC Minas - Engenharia de Software
 
 ## Disciplina TIAW
 ### Dinamica JavaScript
