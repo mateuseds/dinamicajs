@@ -6,18 +6,9 @@ body {
     min-width: 415px;
 }
 
-a {
-    color: #1e90ff;
-}
-
 #conteudo {
     background-color: #496b8e6b;
     border-radius: 5px;
-}
-
-span {
-    color: #59b2ff!important;
-    cursor: help;
 }
 
 .app {
@@ -87,9 +78,26 @@ span {
     cursor: help;
 }
 
+.info {
+    color: #1e90ff;
+    cursor: help;
+}
+
 .openpopover {
     text-align: justify;
     color: #000000;
+}
+
+.popoverbutton__close {
+    border: 0;
+    opacity: 0.8;
+    outline: none;
+    color: #000000;
+    font-weight: bold;
+    position: absolute;
+    right: -3px;
+    top: -1px;
+    background: transparent;
 }
 
 .openpopover__title {
@@ -99,7 +107,6 @@ span {
 }
 
 .openpopover__p {
-    cursor: help;
     text-align: center;
 }
 
@@ -172,34 +179,17 @@ span {
     outline: none;
     color: #000000;
     font-weight: bold;
-    transition: all 0.5s ease-in-out;
     position: absolute;
     right: 10px;
     top: 10px;
-}
-
-.button:hover {
-    transform: scale(1.1);
+    background: transparent;
 }
 
 .dinamicaCollapsed {
     display: block;
 }
 
-.arrow {
-    border: solid #000000;
-    border-width: 0px 5px 5px 0px;
-    display: inline-block;
-    position: absolute;
-    left: 20px;
-    padding: 10px;
-}
-
-.down {
-    transform: rotate(45deg);
-}
-
-.dinamicaCollapsedButton {
+.collapsedButton {
     margin: 50px 0 10px;
     padding: 5px 10px 40px;
     height: 25px;
@@ -212,9 +202,24 @@ span {
     border-radius: 10px;
 }
 
-.active,
-.collapsible:hover {
+.collapsedButton--active {
     background-color: #0081ffd4;
+}
+
+.collapsedButton--active .collapsedButton__icon {
+    transform: rotate(-135deg);
+    bottom: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.collapsedButton__icon {
+    border: solid #000000;
+    border-width: 0px 5px 5px 0px;
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    padding: 10px;
+    transform: rotate(45deg);
 }
 
 .referenciaConteudo {
