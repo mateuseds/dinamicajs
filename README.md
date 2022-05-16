@@ -1,6 +1,7 @@
-# Dinamica JavaScript
-dinamica javascript utilizando popover, modal e collapse
+# PUC Minas Engenharia de Software
 
-## Engenharia de Software
 ## Disciplina TIAW
-## PUC Minas
+### Dinamica JavaScript
+> - Popover
+> - Modal
+> - Collapse Button
