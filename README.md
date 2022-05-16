@@ -1,2 +1,2 @@
-# popover
-learning how to do a popover
+# Dinamica JavaScript
+dinamica javascript utilizando popover, modal e collapse
