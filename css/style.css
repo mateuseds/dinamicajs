@@ -1,12 +1,22 @@
 body {
-    background-color: #ffffff;
-    color: #000000;
-    margin: 10px 100px;
+    background-color: #212529;
+    color: #ffffff;
+    margin: 0 100px;
     line-height: 1.4;
+    min-width: 415px;
+}
+
+a {
+    color: #1e90ff;
+}
+
+#conteudo {
+    background-color: #496b8e6b;
+    border-radius: 5px;
 }
 
 span {
-    color: blue;
+    color: #59b2ff!important;
     cursor: help;
 }
 
@@ -15,6 +25,45 @@ span {
     justify-content: center;
     flex-direction: column;
     font-size: 25px;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #383f46;
+    padding: 20px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+}
+
+.header a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 12px;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    background-color: #dddddd;
+    color: #000000;
+}
+
+.header a.active {
+    background-color: #1e90ff;
+    color: #ffffff;
+}
+
+.header-right {
+    float: right;
 }
 
 .title {
@@ -33,12 +82,13 @@ span {
     width: 100%;
     height: 500px;
     border-radius: 5px;
-    box-shadow: 2px 4px 0.5em 0.5px black;
+    box-shadow: 2px 4px 0.5em 0.5px #000000;
     cursor: help;
 }
 
 .openpopover {
     text-align: justify;
+    color: #000000;
 }
 
 .openpopover__title {
@@ -58,8 +108,133 @@ span {
     border-radius: 15px;
 }
 
+#dinamicaModal {
+    display: none;
+}
+
+#dinamicaModal.open {
+    display: block;
+    transition: all 2s ease-in-out;
+}
+
+.dinamicaModal__wrapper {
+    background-color: #0000004d;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.dinamicaModal__wrapper.open {
+    opacity: 1;
+    z-index: 999;
+}
+
+.dinamicaModal {
+    background-color: #212529;
+    box-shadow: 0 1px 4px #0000004d;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 1200px;
+    max-width: 95%;
+    border-radius: 15px;
+}
+
+.dinamicaModal__img {
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.dinamicaModal__body {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 0 0 1em #000000;
+    border-radius: 15px;
+}
+
+.dinamicaModal__title {
+    padding: 0 10px 10px;
+    font-size: 30px;
+}
+
+.button {
+    border: 0;
+    opacity: 0.8;
+    outline: none;
+    color: #000000;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
+
+.dinamicaCollapsed {
+    display: block;
+}
+
+.arrow {
+    border: solid #000000;
+    border-width: 0px 5px 5px 0px;
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    padding: 10px;
+}
+
+.down {
+    transform: rotate(45deg);
+}
+
+.dinamicaCollapsedButton {
+    margin: 50px 0 10px;
+    padding: 5px 10px 40px;
+    height: 25px;
+    width: 100%;
+    position: relative;
+    background-color: #0254a394;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #0081ffd4;
+}
+
+.referenciaConteudo {
+    padding: 0px 15px 15px 25px;
+    display: none;
+    overflow: hidden;
+    background-color: #383f46;
+    border-radius: 10px;
+}
+
+.referenciaConteudo__texto {
+    padding: 20px 0 0 20px;
+}
+
 .footer {
+    overflow: hidden;
+    background-color: #383f46;
+    box-shadow: 0 0 50px #000000e6;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 20px;
     margin-top: 50px;
-    margin-bottom: 10px;
     text-align: center;
 }
